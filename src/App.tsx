@@ -231,7 +231,7 @@ const App: React.FC = () => {
                                 lineHeight: '1.2em',
                                 textShadow: '2px 2px #0000007f',
                                 fontWeight: "bolder",
-                            }}>幽灵车尔尼桑</span>
+                            }}>目暮警官呀</span>
                         </Row>
                         <Row justify={'center'}>
                             <span style={{
