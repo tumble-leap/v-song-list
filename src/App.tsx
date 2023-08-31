@@ -363,10 +363,10 @@ const App: React.FC = () => {
                         </Button>
                         
                         <Button className={'BtnAiFaDian'}
-                                onClick={() => window.open("https://xxx")}>
+                                onClick={() => window.open("https://www.aliyundrive.com/s/PmbZzDAJFXf")}>
                             <div className={'BtnContent'}>
                                 <img alt={'afdian'} src={'https://afdian.net/favicon.ico'}></img>
-                                <span>直播回放</span>
+                                <span>直播回放(临时保存?)</span>
                             </div>
                         </Button>
                         <div style={{
