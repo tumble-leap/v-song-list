@@ -332,21 +332,12 @@ const App: React.FC = () => {
                 <Drawer visible={visable} onClose={closeDrawer} size={"default"}>
                     <Row justify={"center"}>
                         <Col span={24} style={{fontSize: '18px', marginBottom: '20px'}}>
-                            <div style={{fontSize: '24px'}}>~幽灵2021置顶更新~</div>
+                            <div style={{fontSize: '24px'}}>~置顶更新~</div>
                             <div>大家好，这里是<span
-                                style={{color: "#d58a98", fontSize: '20px', fontWeight: "bolder"}}>幽灵车尔尼桑</span>，一个投稿更新直播随缘的up主
+                                style={{color: "#d58a98", fontSize: '20px', fontWeight: "bolder"}}>目暮警官呀</span>，一个社恐的主包
                             </div>
-                            <div>喜欢的事是唱歌，在音乐区和生活区反 复 横 跳</div>
-                            <div>【但是看直播很少看唱歌？？？】</div>
-                            <div>谨记偶像（？）的“乐在二次元，行在三次元”，以自己的步调慢慢探索更多的可能性。</div>
-                            <div>很多东西是懂的，但是很任性地不做而已T T</div>
-                            <div>今年的目标是300粉！</div>
-                            <div>希望能跟大家一起成长吧^ ^</div>
                             <br/>
-                            <div>粉丝基数比较小，推歌、提问、想让我说的台词都可以放进下方提问箱中，我目前都回答啦！↓</div>
-                            <div>（其实差一个台词没有念 嘘——）</div>
-                            <br/>
-                            <div>谢谢大家的关注与喜欢，幽灵会努力赚钱→更多学习→然后变成唱歌更好的人！</div>
+                            <div>欢迎来直播间玩！</div>
                         </Col>
                     </Row>
                     <Row
@@ -357,53 +348,25 @@ const App: React.FC = () => {
                         }}
                     >
                         <Button className={'BtnBiliSpace'}
-                                onClick={() => window.open("https://space.bilibili.com/21693393")}>
+                                onClick={() => window.open("https://space.bilibili.com/3494377978595498")}>
                             <div className={'BtnContent'}>
                                 <img alt={'bilibili'} src={'https://www.bilibili.com/favicon.ico'}></img>
                                 <span>B站个人空间</span>
                             </div>
                         </Button>
                         <Button className={'BtnBiliLive'}
-                                onClick={() => window.open("https://live.bilibili.com/370468")}>
+                                onClick={() => window.open("https://live.bilibili.com/30336446")}>
                             <div className={'BtnContent'}>
                                 <img alt={'bilibili-live'} src={'https://www.bilibili.com/favicon.ico'}></img>
                                 <span>B站直播间</span>
                             </div>
                         </Button>
-                        <Button className={'BtnMusic163'}
-                                onClick={() => window.open("https://music.163.com/#/artist?id=32953961")}>
-                            <div className={'BtnContent'}>
-                                <img alt={'music163'}
-                                     src={'http://p3.music.126.net/tBTNafgjNnTL1KlZMt7lVA==/18885211718935735.jpg'}></img>
-                                <span>网易云音乐</span>
-                            </div>
-                        </Button>
-                        <Button className={'Btn5Sing'}
-                                onClick={() => window.open("http://5sing.kugou.com/50168798/default.html")}>
-                            <div className={'BtnContent'}>
-                                <img alt={'5sing'} src={'http://5sing.kugou.com/favicon.ico'}></img>
-                                <span>5sing-中国原创音乐基地</span>
-                            </div>
-                        </Button>
-                        <Button className={'BtnBiliLive'}
-                                onClick={() => window.open("https://space.bilibili.com/1277624886")}>
-                            <div className={'BtnContent'}>
-                                <img alt={'luboling'} src={lblImage}></img>
-                                <span>录播灵</span>
-                            </div>
-                        </Button>
+                        
                         <Button className={'BtnAiFaDian'}
-                                onClick={() => window.open("https://afdian.net/@youling0722")}>
+                                onClick={() => window.open("https://xxx")}>
                             <div className={'BtnContent'}>
                                 <img alt={'afdian'} src={'https://afdian.net/favicon.ico'}></img>
-                                <span>爱发电</span>
-                            </div>
-                        </Button>
-                        <Button className={'BtnQuestBox'}
-                                onClick={() => window.open("https://www.tapechat.net/uu/amahost/GW2RNASK")}>
-                            <div className={'BtnContent'}>
-                                <img alt={'afdian'} src={'https://www.tapechat.net/favicon.ico'}></img>
-                                <span>提问箱</span>
+                                <span>直播回放</span>
                             </div>
                         </Button>
                         <div style={{

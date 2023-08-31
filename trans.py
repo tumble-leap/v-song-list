@@ -45,7 +45,7 @@ def parse_xlsx(xlsx_file: str):
 
 
 if __name__ == '__main__':
-    data, allTagsSet = parse_xlsx(sys.argv[1] if len(sys.argv) > 1 else '幽灵歌单整理.xlsx')
+    data, allTagsSet = parse_xlsx(sys.argv[1] if len(sys.argv) > 1 else '木木歌单整理.xlsx')
     allTagsList = list(allTagsSet)
     allTagsList.sort()
     jdata = json.dumps({'data': data, 'tags': allTagsList}, separators=(',', ':'))
