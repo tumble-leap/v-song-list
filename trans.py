@@ -16,7 +16,7 @@ def parse_xlsx(xlsx_file: str):
     for row in ws[f'2:{ws.max_row}']:
         if row[1].value is None:
             break
-        money = row[0].value and int(row[0].value) or 0
+        money = row[0].value or 0 # and int(row[0].value) or 0
         song = row[1].value.strip()
         singer = row[2].value and row[2].value.strip() or ''
         link = row[3].value and row[3].value.strip() or ''
