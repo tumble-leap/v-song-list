@@ -55,7 +55,7 @@ const colorTable = [
 
 interface IDataType {
     key: number;
-    money: number;
+    money: string;
     song: string;
     link: string;
     singer: string;
@@ -86,8 +86,8 @@ const App: React.FC = () => {
     const random_a_song = () => {
         let record: IDataType = data[Math.floor(Math.random() * data.length)];
         copy('点歌 ' + record.song);
-        if (record.money !== 0)
-            message.success('"点歌 ' + record.song + '"成功复制到剪贴板，快去直播间打' + record.money + '米点歌吧~');
+        if (record.money !== "")
+            message.success('"点歌 ' + record.song + '"成功复制到剪贴板，快去直播间送出' + record.money + '点歌吧~');
         else
             message.success('"点歌 ' + record.song + '"成功复制到剪贴板，快去直播间点歌吧~');
     }
@@ -180,7 +180,7 @@ const App: React.FC = () => {
                                     continue;
                                 }
                                 if (lword.startsWith("!M:")) {
-                                    if (!(item?.money === parseInt(lword.slice(3))))
+                                    if (!(item?.money === lword.slice(3)))
                                         return false;
                                     continue;
                                 }
@@ -307,8 +307,8 @@ const App: React.FC = () => {
                                             return {
                                                 onDoubleClick: () => {
                                                     copy('点歌 ' + record.song);
-                                                    if (record.money !== 0)
-                                                        message.success('"点歌 ' + record.song + '"成功复制到剪贴板，快去直播间打 ' + record.money + ' 米点歌吧~');
+                                                    if (record.money !== "")
+                                                        message.success('"点歌 ' + record.song + '"成功复制到剪贴板，快去直播间送出 ' + record.money + ' 点歌吧~');
                                                     else
                                                         message.success('"点歌 ' + record.song + '"成功复制到剪贴板，快去直播间点歌吧~');
                                                 },
@@ -361,7 +361,7 @@ const App: React.FC = () => {
                                 <span>B站直播间</span>
                             </div>
                         </Button>
-                        
+
                         <Button className={'BtnAiFaDian'}
                                 onClick={() => window.open("https://www.aliyundrive.com/s/PmbZzDAJFXf")}>
                             <div className={'BtnContent'}>
